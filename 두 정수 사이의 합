@@ -1,0 +1,13 @@
+def solution(a, b):
+    answer = 0
+    if a<b :
+        return sum(range(a,b+1))
+    elif a>b :
+        list1 = list(range(b,a+1))
+        answer = sum(list1)
+    else :
+        answer = a
+    return answer
+print(solution(3,5))  # 12
+print(solution(3,3))  # 0
+print(solution(5,3))  # 12
