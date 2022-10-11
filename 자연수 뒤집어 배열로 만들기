@@ -1,0 +1,6 @@
+def solution(n):
+    answer = []
+    strA = str(a)
+    for i in range(len(strA)-1,0,-1):   # range(시점, 종점, 스텝 수)이고, 스텝의 범위는 정수임
+        answer.append(int(str[i-1]))
+    return answer
