@@ -1,0 +1,15 @@
+# 원소가 1개일 시 -1로 반환, 그 외는 제일 작은 수 제거하기
+
+def solution(arr):
+    answer = []
+    if len(arr)==1 :
+        return [-1]
+    minNumber = 1000000
+    for a in arr : 
+        if a < minNumber : 
+            minNumber = a
+    arr.remove(minNumber)
+    return arr
+
+print(solution([10]))
+print(solution([4,3,2,1]))
